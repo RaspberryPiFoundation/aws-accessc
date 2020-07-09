@@ -1,3 +1,5 @@
+# THIS FILE HAS BEEN MODIFIED BY Raspberry Pi Foundation
+# Copyright (C) 2020 Raspberry Pi Foundation
 # Copyright (C) 2019 Isotoma Limited
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -49,7 +51,7 @@ class GoogleRoleManager:
     def _get_all_roles(self):
         results = self.service.users().list(
             customer='my_customer',
-            maxResults=100,
+            maxResults=500,
             orderBy='email',
             projection="full"
         ).execute()
